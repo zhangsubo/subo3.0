@@ -133,11 +133,15 @@ add_action( 'widgets_init', 'subo_widgets_init' );
  */
 function subo_style()
 {
+    wp_register_style('subo_temestyle',bloginfo('stylesheet_url'),array(),'20170205' );
     wp_register_style('subo_normalize',CSS_URL . 'normalize.css',array(),'20170130' );
     wp_register_style('subo_fontawsome',CSS_URL . 'fontawsome/font-awesome.min.css', array() , '' );
     wp_register_style('subo_menu',CSS_URL.'min/meanmenu.min.css',array(),'20170130' );
     wp_register_style('subo_web',CSS_URL . 'style.css', array() , '201701301' );
+
+
     wp_enqueue_style('subo_normalize' );
+    wp_enqueue_style('subo_temestyle' );
     wp_enqueue_style( 'subo_fontawsome');
     wp_enqueue_style('subo_menu' );
     wp_enqueue_style('subo_web' );
