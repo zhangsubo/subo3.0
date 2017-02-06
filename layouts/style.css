@@ -446,9 +446,13 @@ footer>.row>.sns-link{
 footer>.row>.copyright{
     margin: 10px 0 50px 0;
 }
-footer>.row>.copyright,footer>.row>.copyright>.icp>a{
+footer>.row>.copyright,footer>.row>.copyright>.icp>a,footer>.row>.copyright>.ads a{
     font-size:0.625rem;
     color:#777;
+}
+footer>.row>.copyright>.ads a{
+  font-size: 0.5rem;
+  color: #ccc;
 }
 /*微信弹窗*/
 .weixindiag{
