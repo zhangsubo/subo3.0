@@ -114,7 +114,7 @@ hr {
 }
 
 pre {
-  overflow: auto;
+  white-space: pre-wrap;
 }
 
 code,
@@ -293,6 +293,7 @@ li {
 .clearfix:after {
     clear: both;
 }
+
 /* ===============
    自定义样式
    =============== */
@@ -513,6 +514,9 @@ section
 .content-area>.article-content{
     font-size: 1.25rem;
 }
+.content-area footer{
+  margin-bottom: 20px;
+}
 .content-area footer,.content-area footer a{
     color: #777;
     font-size: 1rem;
@@ -524,13 +528,73 @@ section
 }
 .content-area footer>ul:before {
   content: "";
+}
 
+/*
+将entry-content容器里的所有元素设为默认值
+*/
+.entry-content html,.entry-content address,.entry-content blockquote,.entry-content body,.entry-content dd,.entry-content div,
+.entry-content dl,.entry-content dt,.entry-content fieldset,.entry-content form,.entry-content frame,.entry-content frameset,
+.entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6,.entry-content noframes,
+.entry-content ol,.entry-content p,.entry-content ul,.entry-content center,.entry-content dir,.entry-content hr,.entry-content menu,
+.entry-content pre { display: block }
+.entry-content li { display: list-item }
+.entry-content head { display: none }
+.entry-content table { display: table }
+.entry-content tr { display: table-row }
+.entry-content thead { display: table-header-group }
+.entry-content tbody { display: table-row-group }
+.entry-content tfoot { display: table-footer-group }
+.entry-content col { display: table-column }
+.entry-content colgroup { display: table-column-group }
+.entry-content td,.entry-content  th { display: table-cell; }
+.entry-content caption { display: table-caption }
+.entry-content th { font-weight: bolder; text-align: center }
+.entry-content caption { text-align: center }
+.entry-content body { margin: 8px; line-height: 1.12 }
+.entry-content h1 { font-size: 2em; margin: .67em 0;line-height: 1.5em }
+.entry-content h2 { font-size: 1.5em; margin: .75em 0;line-height: 1.5em }
+.entry-content h3 { font-size: 1.17em; margin: .83em 0;line-height: 1.5em }
+.entry-content h4 { font-size: 1.09em; margin: 1.12em 0;line-height: 1.5em }
+.entry-content h4,.entry-content p,.entry-content blockquote,.entry-content ul,.entry-content fieldset, .entry-content form,.entry-content ol,.entry-content dl,.entry-content dir,.entry-content menu { margin: 1.12em 0 }
+.entry-content h5 { font-size: .83em; margin: 1.5em 0;line-height: 1.5em }
+.entry-content h6 { font-size: .75em; margin: 1.67em 0;line-height: 1.5em }
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content b,.entry-content strong { font-weight: bolder }
+.entry-content blockquote { margin-left: 40px; margin-right: 40px }
+.entry-content i, .entry-content cite, .entry-content em,.entry-content var,.entry-content address { font-style: italic }
+.entry-content pre, .entry-content tt,.entry-content  code,.entry-content  kbd,.entry-content samp { font-family: monospace }
+.entry-content pre { white-space: pre }
+.entry-content button,.entry-content textarea,.entry-content input,.entry-content object,.entry-content select { display:inline-block; }
+.entry-content big { font-size: 1.17em }
+.entry-content small, .entry-content sub, .entry-content sup { font-size: .83em }
+.entry-content sub { vertical-align: sub }
+.entry-content sup { vertical-align: super }
+.entry-content table { border-spacing: 2px; }
+.entry-content thead, .entry-content tbody,.entry-content tfoot { vertical-align: middle }
+.entry-content td, .entry-content th { vertical-align: inherit }
+.entry-content s, .entry-content strike,.entry-content  del { text-decoration: line-through }
+.entry-content hr { border: 1px inset }
+.entry-content ol, .entry-content ul,.entry-content  dir, .entry-content menu, .entry-content dd { margin-left: 40px }
+.entry-content ol ,.entry-content li{ list-style-type: decimal-leading-zero; }
+.entry-content ol ul,.entry-content ul ol, .entry-content ul ul, .entry-content ol ol { margin-top: 0; margin-bottom: 0 }
+.entry-content u,.entry-content ins { text-decoration: underline }
+.entry-content br:before { content: "A" }
+.entry-content :before, .entry-content :after { white-space: pre-line }
+.entry-content center { text-align: center }
+.entry-content abbr,.entry-content acronym { font-variant: small-caps; letter-spacing: 0.1em }
+.entry-content :link,.entry-content :visited { text-decoration: underline }
+.entry-content :focus { outline: thin dotted invert }
+.entry-content BDO[DIR="ltr"] { direction: ltr; unicode-bidi: bidi-override }
+.entry-content BDO[DIR="rtl"] { direction: rtl; unicode-bidi: bidi-override }
+.entry-content *[DIR="ltr"] { direction: ltr; unicode-bidi: embed }
+.entry-content *[DIR="rtl"] { direction: rtl; unicode-bidi: embed }
+
+.entry-content p{
+  text-indent: 2rem;
 }
-{
-    float: left;
-    display: inline-block;
-    margin-right: 20px;
-}
+
+
+.entry-content
 /*
 评论区
  */
@@ -834,7 +898,6 @@ button.btn-lg,
   margin-top: 0;
   padding: 0;
 }
-
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -983,6 +1046,9 @@ section.links article.friends ul li:last-child:after{
     width: 1px;
     overflow: hidden;
 }
+
+
+
 /* ===============
    中屏幕
    =============== */

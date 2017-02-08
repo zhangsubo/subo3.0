@@ -25,14 +25,16 @@ define('IMG_DIR', THEME_DIR . 'images/');
 /*----------------------------------------------------------------------*/
 /* 引入依赖文件 */
 /*----------------------------------------------------------------------*/
-include_once (ZS_DIR . 'remove-head.php');
-//include_once (ZS_DIR . 'custom-excerpt.php');
+include_once (ZS_DIR . 'remove-head.php');//移除头部多余代码
+include_once (ZS_DIR . 'custom-excerpt.php');//自定义文字长度
 // include_once (ZS_DIR . 'post-functions.php');
 // include_once (ZS_DIR . 'paginate-links.php');
 // include_once (ZS_DIR . '/widgets/widgets-info.php');
 // include_once (ZS_DIR . 'remove-open-sans.php');
-include_once (ZS_DIR . 'register-post.php');
-include_once (ZS_DIR . 'option.php');
+include_once (ZS_DIR . 'register-post.php');//定义post类型
+include_once (ZS_DIR . 'option.php');//选项页面
+
+
 if ( ! function_exists( 'subo_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

@@ -17,6 +17,9 @@
 
 	<div class="entry-content">
 		<?php
+		if (!is_single( )) {
+			the_excerpt();
+		}else{
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'subo' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -26,7 +29,7 @@
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'subo' ),
 				'after'  => '</div>',
-			) );
+			) );}
 		?>
 	</div><!-- .entry-content -->
 	<?php if (!is_single( )) :?>
