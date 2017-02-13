@@ -1005,6 +1005,15 @@ section>article .tag:nth-child(even)>a{
 .about-website ul li{
     display: block;
 }
+.contact-me ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-me li {
+    list-style: none;
+    display: inline;
+}
 .contact-me ul li{
     float: left;
     text-align: center;
