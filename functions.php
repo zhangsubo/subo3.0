@@ -21,6 +21,8 @@ define('ZS_DIR', THEME_DIR . 'zsuper-framework/');
 define('ZS_URL', THEME_URL . 'zsuper-framework/');
 define('IMG_URL', THEME_URL . 'images/');
 define('IMG_DIR', THEME_DIR . 'images/');
+define('OPTION_URL', ZS_URL . 'acf/');
+define('OPTION_DIR', ZS_DIR . 'acf/');
 
 /*----------------------------------------------------------------------*/
 /* 引入依赖文件 */
