@@ -140,7 +140,7 @@ function subo_style()
     wp_register_style('subo_normalize',CSS_URL . 'normalize.css',array(),'20170130' );
     wp_register_style('subo_fontawsome',CSS_URL . 'fontawsome/font-awesome.min.css', array() , '' );
     wp_register_style('subo_menu',CSS_URL.'min/meanmenu.min.css',array(),'20170130' );
-    wp_register_style('subo_web',CSS_URL . 'style.css', array() , '20170213' );
+    wp_register_style('subo_web',CSS_URL . 'style.css', array() , '20170215' );
     wp_enqueue_style('subo_normalize' );
     wp_enqueue_style( 'subo_fontawsome');
     wp_enqueue_style('subo_menu' );

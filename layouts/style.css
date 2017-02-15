@@ -536,8 +536,10 @@ section
 .entry-content html,.entry-content address,.entry-content blockquote,.entry-content body,.entry-content dd,.entry-content div,
 .entry-content dl,.entry-content dt,.entry-content fieldset,.entry-content form,.entry-content frame,.entry-content frameset,
 .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6,.entry-content noframes,
-.entry-content ol,.entry-content p,.entry-content ul,.entry-content center,.entry-content dir,.entry-content hr,.entry-content menu,
-.entry-content pre { display: block }
+.entry-content ol,.entry-content p,.entry-content ul,.entry-content center,.entry-content dir,.entry-content hr,.entry-content menu,.entry-content pre{
+  display: block;
+}
+.entry-content pre { padding: 15px 16px;line-height: 16px; font-size: 14px; white-space: pre;white-space:pre;word-wrap: normal;overflow: auto;font-size: consolas,monaco,monospace;border: 0;border-radius: 3px;background: #f0f0f0;}
 .entry-content li { display: list-item }
 .entry-content head { display: none }
 .entry-content table { display: table }
