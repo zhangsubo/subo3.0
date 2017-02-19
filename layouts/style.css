@@ -540,7 +540,7 @@ section
   display: block;
 }
 .entry-content pre { padding: 15px 16px;line-height: 16px; font-size: 14px; white-space: pre;white-space:pre;word-wrap: normal;overflow: auto;font-size: consolas,monaco,monospace;border: 0;border-radius: 3px;background: #f0f0f0;}
-.entry-content img{text-align: center;}
+.entry-content img{text-align: center;max-width: 90%;height: auto;}
 .entry-content li { display: list-item }
 .entry-content head { display: none }
 .entry-content table { display: table }
