@@ -577,7 +577,6 @@ section
 .entry-content td, .entry-content th { vertical-align: inherit }
 .entry-content s, .entry-content strike,.entry-content  del { text-decoration: line-through }
 .entry-content hr { border: 1px inset }
-.entry-content ol, .entry-content ul,.entry-content  dir, .entry-content menu, .entry-content dd { margin-left: 40px }
 .entry-content ol ,.entry-content li{ list-style-type: decimal-leading-zero; }
 .entry-content ol ul,.entry-content ul ol, .entry-content ul ul, .entry-content ol ol { margin-top: 0; margin-bottom: 0 }
 .entry-content u,.entry-content ins { text-decoration: underline }
