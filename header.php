@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="website_header">
+    <header class="website-header">
         <div class="top clearfix">
             <div class="logo"><a href="<?php bloginfo('url') ?>"><?php $website=home_url( );echo str_replace('http://', '', $website); ?></a></div>
             <div id="navigation">
@@ -30,7 +30,7 @@
             </div>
             </div>
         <section class="slogan text-center">
-		<?php if(is_front_page()&&is_home()){ ?>
+		    <?php if(is_front_page()&&is_home()){ ?>
                <div class="big-title "><?php bloginfo('name'); ?></div>
                <hr class="small" />
                <div class="small-title "><?php bloginfo('description'); ?></div>
@@ -38,21 +38,25 @@
                <div class="big-title"><?php echo the_title(); ?></div>
                <hr class="small" />
                <div class="small-title"><?php the_field('page-en'); ?></div>
-         <?php }elseif(is_single()) {?>
-			<div class="article-title"><?php the_title(); ?></div>
-            <hr class="small" />
-            <?php
-			if ( have_posts() ) {
-				while ( have_posts() ) {
-		    		the_post();
-					subo_posted_on();
-	        	}
+        <?php }elseif(is_single()) {?>
+			         <div class="article-title"><?php the_title(); ?></div>
+               <hr class="small" />
+        <?php
+			     if ( have_posts() ) {
+				      while ( have_posts() ) {
+		    	       the_post();
+					       subo_posted_on();
+	             }
          	}
 		?>
          <?php }elseif(!have_posts()){ ?>
          <div class="big-title">404!No Fond</div>
                <hr class="small" />
               <div class="small-title">你搜索的东西坐宇宙飞船去了火星，┗|｀O′|┛ 嗷~~</div>
+          <?php }elseif(is_search()){ ?>
+              <div class="big-title"><?php echo get_search_query() ?></div>
+              <hr class="small" />
+              <div class="small-title">搜索结果</div>
           <?php } ?>
 </section>
     </header>

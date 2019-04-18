@@ -496,6 +496,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/layouts/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/layouts/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/layouts/style.css": {
 		"aP": 1,
 		"bl": 0,
