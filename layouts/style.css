@@ -345,7 +345,7 @@ a:active {
 /*
 header
  */
-header{
+.website_header{
     height: 28.125rem;
     background: url(../images/home-bg.jpg) no-repeat;
 }

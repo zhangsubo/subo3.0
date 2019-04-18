@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header>
+    <header class="website_header">
         <div class="top clearfix">
             <div class="logo"><a href="<?php bloginfo('url') ?>"><?php $website=home_url( );echo str_replace('http://', '', $website); ?></a></div>
             <div id="navigation">
