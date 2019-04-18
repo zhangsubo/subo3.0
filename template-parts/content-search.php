@@ -27,4 +27,5 @@
 	<footer class="entry-footer">
 		<?php subo_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	<hr class="long" />
 </article><!-- #post-## -->
