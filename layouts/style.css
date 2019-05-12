@@ -591,12 +591,43 @@ section
 .entry-content *[DIR="ltr"] { direction: ltr; unicode-bidi: embed }
 .entry-content *[DIR="rtl"] { direction: rtl; unicode-bidi: embed }
 
-.entry-content p{
-  text-indent: 2rem;
+/*.entry-content 重新定义*/
+.entry-content{
+  font-size:14px;
+  color: rgb(0,0,0);
+}
+.entry-content a {
+  color: rgb(255, 53, 2);
+}
+.entry-content img {
+  width: 100%;
+  margin: 0 auto;
+}
+.entry-content blockquote{
+  text-align:left;
+  color:rgb(91, 91, 91);
+  line-height:1.5;
+  letter-spacing:1.5px;
+  margin:20px 10px;
+  padding:1px 0 1px 10px;
+  background:rgba(158, 158, 158, 0.1);
+  border-left:3px solid rgb(158,158,158)
+}
+.entry-content pre {
+  background:rgb(0, 0, 0);
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  margin: 10px 0;
+  padding: 20px 30px;
+}
+.entry-content pre code{
+  text-align:justify;
+  color:4c4c4c;
+  line-height:1.5;
+  font-size:14px;
+  letter-spacing:1.5px;
 }
 
-
-.entry-content
 /*
 评论区
  */
