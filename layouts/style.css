@@ -347,7 +347,7 @@ header
  */
 .website-header{
     height: 28.125rem;
-    background: url(../images/home-bg.jpg) no-repeat;
+    background: url(../../images/home-bg.jpg) no-repeat;
 }
 header>.top{
     padding: 25px 30px;
