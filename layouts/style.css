@@ -218,7 +218,10 @@ section>article>.article-footer>a{
 .posts-navigation:after {
     clear: both;
 }
-
+.about-me{
+  border: 1px dashed #666;
+  padding: 10px;
+}
 /*
 footer
  */
@@ -251,7 +254,7 @@ footer>.row>.copyright>.ads a{
     border-radius:5px;
 }
 .weixinclose{
-    background:url(../images/weixinclose.png) no-repeat;
+    background:url(../../images/weixinclose.png) no-repeat;
     width:38px;
     height:38px;
     display:inline-block;

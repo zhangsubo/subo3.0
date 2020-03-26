@@ -40,6 +40,5 @@ get_header(); ?>
 		endif; ?>
 
 	</section><!-- #primary -->
-
 <?php
 get_footer();
