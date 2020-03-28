@@ -1,1 +1,3 @@
 Config.codekit3
+.jshintignore
+.jscsrc
