@@ -67,7 +67,7 @@
 		},
 	"/images/comment_media.png": {
 		"ft": 32768,
-		"iS": 2681,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/images/comment_media.png",
 		"oF": 0,
@@ -111,7 +111,7 @@
 		},
 	"/images/home-bg.jpg": {
 		"ft": 16384,
-		"iS": 221447,
+		"iS": 0,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/home-bg.jpg",
@@ -144,7 +144,7 @@
 		},
 	"/images/item1.png": {
 		"ft": 32768,
-		"iS": 120854,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/images/item1.png",
 		"oF": 0,
@@ -177,7 +177,7 @@
 		},
 	"/images/not-found.png": {
 		"ft": 32768,
-		"iS": 183940,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/images/not-found.png",
 		"oF": 0,
@@ -199,7 +199,7 @@
 		},
 	"/images/wechat.png": {
 		"ft": 32768,
-		"iS": 30981,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/images/wechat.png",
 		"oF": 0,
@@ -221,7 +221,7 @@
 		},
 	"/images/weixinclose.png": {
 		"ft": 32768,
-		"iS": 1362,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/images/weixinclose.png",
 		"oF": 0,
@@ -483,6 +483,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/layouts/min/meanmenu-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/layouts/min/content-sidebar-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/layouts/min/min/content-sidebar-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1022,7 +1032,7 @@
 		},
 	"/zsuper-framework/acf/assets/inc/datepicker/images/ui-icons_444444_256x240.png": {
 		"ft": 32768,
-		"iS": 6992,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/zsuper-framework/acf/assets/inc/datepicker/images/ui-icons_444444_256x240.png",
 		"oF": 0,
@@ -1132,6 +1142,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/zsuper-framework/acf/assets/inc/select2/4/min/select2.full.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/zsuper-framework/acf/assets/inc/select2/4/min/min/select2.full.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/zsuper-framework/acf/assets/inc/select2/4/min/select2.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/zsuper-framework/acf/assets/inc/select2/4/min/min/select2.min-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/zsuper-framework/acf/assets/inc/select2/4/select2.css": {
 		"aP": 1,
@@ -2110,6 +2140,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/zsuper-framework/acf/pro/assets/js/min/acf-pro-field-group.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/zsuper-framework/acf/pro/assets/js/min/min/acf-pro-field-group.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/zsuper-framework/acf/pro/core/updates.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2250,7 +2290,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 577293354.835338,
-	"displayValue": "subo3",
+	"displayValue": "subo3.0",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-angryPicard",
 	"iconImageWasSetByUser": 0

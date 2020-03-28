@@ -18,9 +18,8 @@
 
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-    <header class="website-header">
+    <header class="website-header" style="background: url(<?php bloginfo('template_url' ); ?>/zsuper-framework/bing-api.php) no-repeat;">
         <div class="top clearfix">
             <div class="logo"><a href="<?php bloginfo('url') ?>"><?php $website=home_url( );echo str_replace('http://', '', $website); ?></a></div>
             <div id="navigation">
