@@ -135,6 +135,8 @@ header
 .website-header{
     height: 28.125rem;
     background: url(../../images/home-bg.jpg) no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 header>.top{
     padding: 25px 30px;

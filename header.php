@@ -15,20 +15,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
-<?php if (time()>= 1585929600 && time()<= 1586016000) { ?>
-  <style>
-      *{
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-  }
-  </style>
-<?php }?> 
-
-
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
