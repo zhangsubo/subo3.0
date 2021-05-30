@@ -43,7 +43,7 @@
         <div class="copyright">
         Copyright@<?php $website=home_url( );echo str_replace('http://', '', $website)." ".date('Y'); ?>
         <?php if(get_field('subo_icp','option')): ?>
-        <div class="icp"><a href="https://beian.miit.gov.cn/" rel="nofollow"><?php the_field('subo_icp','option');?></a></div><?php endif ?>
+        <div class="icp"><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank"><?php the_field('subo_icp','option');?></a></div><?php endif ?>
         <?php if(get_field('subo_icp','option')): ?><div class="ads"><?php the_field('subo_ad','option');?></a></div><?php endif ?>
     </div>
     <div class="overlay"></div>
