@@ -165,6 +165,18 @@ function subo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'subo_scripts' );
 /**
+ * 强制修改为 https
+ */
+function my_content_manipulator($content){
+    if( is_ssl() ){
+        $content = str_replace('https://zhangsubo.cn/wp-content/uploads', 'https://zhangsubo.cn/wp-content/uploads', $content);
+    }
+    return $content;
+}
+add_filter('the_content', 'my_content_manipulator');
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
