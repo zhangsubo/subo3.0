@@ -29,7 +29,7 @@ define('OPTION_DIR', ZS_DIR . 'acf/');
 /*----------------------------------------------------------------------*/
 include_once (ZS_DIR . 'remove-head.php');//移除头部多余代码
 include_once (ZS_DIR . 'custom-excerpt.php');//自定义文章摘要文字长度
-// include_once (ZS_DIR . 'post-functions.php');
+include_once (ZS_DIR . 'post-footnotes.php');//链接转脚注
 // include_once (ZS_DIR . 'paginate-links.php');
 // include_once (ZS_DIR . '/widgets/widgets-info.php');
 // include_once (ZS_DIR . 'remove-open-sans.php');
