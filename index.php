@@ -14,31 +14,39 @@
 
 get_header(); ?>
 
-	<section>
+<div id="primary" class="content-area">
+    <main id="main" class="site-main">
+        <?php
+        if ( have_posts() ) {
+            ?>
+            <div class="posts-wrapper">
+                <?php
+                /* 开始循环 */
+                while ( have_posts() ) {
+                    the_post();
 
-		<?php
-		if ( have_posts() ) :
+                    /*
+                     * 包含特定文章格式的模板。
+                     * 如果要在子主题中覆盖此模板，请包含一个名为 content-___.php 的文件
+                     * （其中 ___ 是文章格式名称），该文件将被优先使用。
+                     */
+                    get_template_part( 'template-parts/content', get_post_format() );
+                }
+                ?>
+            </div><!-- .posts-wrapper -->
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+            <?php
+            the_posts_navigation( array(
+                'prev_text' => __( '← Older posts', 'subo2017' ),
+                'next_text' => __( 'Newer posts →', 'subo2017' ),
+            ) );
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+        } else {
+            get_template_part( 'template-parts/content', 'none' );
+        }
+        ?>
+    </main><!-- #main -->
+</div><!-- #primary -->
 
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-	</section><!-- #primary -->
 <?php
 get_footer();

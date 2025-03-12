@@ -44,9 +44,14 @@
 	</footer><!-- .entry-footer -->
 	<hr class="long" />
 	<?php else : ?>
-		<div class="about-me" style="">
-		    <h2>#About Me</h1>
-		    <p style="line-height: 200%">张小璋，野蛮生长成世界500强企业供应链金融产品经理的法语毕业生。微信公众号：<a style="color:#ff6700;text-decoration:underline">张小璋碎碎念</a>（ID:<a style="color:#ff6700;text-decoration:underline"> SylvainZhang </a>）。<br>一直在互联网金融公司从事产品经理工作并负责互联网金融产品线，深耕互联网金融和区块链领域。「PMCAFF」、「人人都是产品经理」专栏作家、「PmTalk」签约作家。</p>
-		</div>
+        <div class="about-me">
+            <h2>#About Me</h2>
+            <?php 
+            if( function_exists('get_field') ) {
+                $about_content = get_field('about_me_content', 'option');
+                echo '<div class="about-content">' . $about_content . '</div>';
+            }
+            ?>
+        </div>
     <?php endif; ?>
 </article><!-- #post-## -->
