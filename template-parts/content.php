@@ -48,7 +48,7 @@
             <h2>#About Me</h2>
             <?php 
             if( function_exists('get_field') ) {
-                $about_content = get_field('about_me_content', 'option');
+                $about_content = get_field('field_about_me_content', 'option');
                 echo '<div class="about-content">' . $about_content . '</div>';
             }
             ?>
